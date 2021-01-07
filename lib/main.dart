@@ -7,6 +7,17 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    return ThemeSwitch();
+  }
+}
+
+class ThemeSwitch extends StatelessWidget {
+  const ThemeSwitch({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Movies App',
       home: Scaffold(
