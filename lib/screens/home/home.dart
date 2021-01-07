@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/components/dark_bottom_navbar.dart';
+import 'package:movie_app/components/light_bottom_navbar.dart';
 
 class Home extends StatefulWidget {
   const Home({
@@ -31,6 +33,7 @@ class _HomeState extends State<Home> {
       title: 'Movies App',
       darkTheme: _darkTheme,
       home: Scaffold(
+        bottomNavigationBar: _light ? LightBottomNavBar() : DarkBottomNavBar(),
         appBar: AppBar(
           title: Text("Discover"),
         ),
