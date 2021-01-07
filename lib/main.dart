@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/screens/home/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,39 +8,6 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ThemeSwitch();
-  }
-}
-
-class ThemeSwitch extends StatelessWidget {
-  const ThemeSwitch({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Movies App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Discover"),
-        ),
-        body: Center(
-          child: Container(
-            child: Text("Movies"),
-          ),
-        ),
-        drawer: Drawer(
-          child: ListView(
-            children: <Widget>[
-              ListTile(
-                title: Text("Dark Theme"),
-                trailing: Switch(value: false, onChanged: (changedTheme) {}),
-              )
-            ],
-          ),
-        ),
-      ),
-    );
+    return Home();
   }
 }
