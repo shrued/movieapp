@@ -36,6 +36,7 @@ class _HomeState extends State<Home> {
       home: Scaffold(
         bottomNavigationBar: _light ? LightBottomNavBar() : DarkBottomNavBar(),
         appBar: AppBar(
+          elevation: 0,
           title: Text("Discover"),
         ),
         body: Center(
