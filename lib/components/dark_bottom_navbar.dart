@@ -10,7 +10,7 @@ class DarkBottomNavBar extends StatefulWidget {
 }
 
 class _DarkBottomNavBarState extends State<DarkBottomNavBar> {
-  int _selectedItem = 0;
+  static int _selectedItem = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +48,7 @@ class _DarkBottomNavBarState extends State<DarkBottomNavBar> {
                   ],
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                )
-                // color: index == _selectedItem ? Colors.blueGrey : Colors.transparent,
-                )
+                ))
             : BoxDecoration(),
         child: Icon(
           icon,

@@ -11,6 +11,11 @@ class LightBottomNavBar extends StatefulWidget {
 
 class _LightBottomNavBarState extends State<LightBottomNavBar> {
   int _selectedItem = 0;
+  // List<Widget> _widgetOptions = <Widget>[
+  //   Text("Home"),
+  //   Text("My List"),
+  //   Text("Account"),
+  // ];
 
   @override
   Widget build(BuildContext context) {
