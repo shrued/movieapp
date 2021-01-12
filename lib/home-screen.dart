@@ -50,10 +50,8 @@ class _HomeState extends State<Home> {
             IconButton(icon: Icon(Icons.search), onPressed: () {})
           ],
         ),
-        body: Center(
-          child: Container(
-            child: _widgetOptions[_currentIndex],
-          ),
+        body: Container(
+          child: _widgetOptions[_currentIndex],
         ),
         drawer: Drawer(
           child: ListView(
