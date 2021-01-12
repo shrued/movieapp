@@ -46,6 +46,9 @@ class _HomeState extends State<Home> {
           elevation: 0,
           backgroundColor: Colors.transparent,
           title: Text("Discover"),
+          actions: <Widget>[
+            IconButton(icon: Icon(Icons.search), onPressed: () {})
+          ],
         ),
         body: Center(
           child: Container(
